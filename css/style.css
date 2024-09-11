@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(33, 33, 33);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+div img {
+    width: 250px;
+    opacity: 0.5;
+    border: double gray 2px;
+    transition: transform 0.5s;
+}
+
+div img:hover {
+    opacity: 1;
+    border: white 2px solid;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
